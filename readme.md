@@ -18,10 +18,21 @@ Project Planning:
 1) Determine which columns I need and which I can drop. 
 2) Add column with an 'addon' count
 3) Answer questions one at a time
-    a) Do customers churn after they've spent a certain amount of money with the company?
-    b) Do customers with a partner and dependents churn at a different rate?
+    a) Do customers with higher monthly_charges churn at a different rate?
+        viz
+        stat test
+    b) Do customers with a partner or dependents churn at a different rate?
+        viz
+        stat test
+
     c) What month are customers most likely to churn?
+        viz
+        stat test
     d) Do customers with more addons churn at a different rate?
+        viz
+        stat test
+4) Comment all code, add markdown cells, add Ho and Ha
+
 
 
 Instructions or an explanation of how someone else can reproduce your project and findings (What would someone need to be able to recreate your project on their own?)
