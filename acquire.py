@@ -11,6 +11,10 @@ import os
 
 
 def get_telco_data():   
+    '''
+    Checks to see if telco.csv is saved locally and if so loads it as a df. If it is not saved this function will query
+    the sql server to pull the information then save is locally. Returns a df.
+    '''
     if os.path.exists('telco.csv'):
         df = pd.read_csv('telco.csv')
     else:

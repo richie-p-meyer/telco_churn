@@ -31,12 +31,16 @@ Project Planning:
     d) Do customers with more addons churn at a different rate?
         viz
         stat test
-4) Comment all code, add markdown cells, add Ho and Ha
+4) Add Ho and Ha
+5) Pick and run 3 classification methods
+6) Make predictions on full data set, save as csv
+7) Comment all code, add markdown cells
 
 
 
-Instructions or an explanation of how someone else can reproduce your project and findings (What would someone need to be able to recreate your project on their own?)
 
 Key Findings 
 
 Recommendations
+
+Steps to Reproduce
