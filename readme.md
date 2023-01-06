@@ -12,7 +12,29 @@ Initial Questions:
 3) What month are customers most likely to churn?
 4) Do customers with more addons churn at a different rate?
 
-Data Dictionary:
+Data Dictionary: 
+    'customer_id' - Unique customer identifier
+    'gender' - Male/Female
+    'senior_citizen' - Over 55
+    'partner' - With a spouse
+    'dependents' - With dependents
+    'tenure' - Length of time with company in months
+    'phone_service' - With phone service
+    'multiple_lines' - Has multiple lines
+    'online_security' - With online security
+    'online_backup' - With online backup 
+    'device_protection' - With device protection
+    'tech_support' - With tech support
+    'streaming_tv' - With streaming tv
+    'streaming_movies' - With streaming movies
+    'paperless_billing' - With paperless billing
+    'monthly_charges' - Monthly charges in USD
+    'total_charges' - Total charges with Telco in USD
+    'churn' - Is customer still with company
+    'contract_type' - Which contract type
+    'internet_service_type' - Which internet service type
+    'payment_type' - Which payment type
+    'churn_month' - If a customer has churned, which month did it happen?
 
 Project Planning:
 1) Determine which columns I need and which I can drop. 
