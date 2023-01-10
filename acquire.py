@@ -24,5 +24,17 @@ def get_telco_data():
         df.to_csv('telco.csv',index=False)
     return df
 
-
+def get_telco_data_signup():   
+    '''
+    Checks to see if telco.csv is saved locally and if so loads it as a df. If it is not saved this function will query
+    the sql server to pull the information then save is locally. Returns a df.
+    '''
+    if os.path.exists('telco_signup.csv'):
+        df = pd.read_csv('telco_signup.csv')
+    else:
+        url = env.get_connection('telco_churn')
+        query = 'select * from customers join contract_types using (contract_type_id) join internet_service_types using (internet_service_type_id) join payment_types using (payment_type_id) left join customer_churn using (customer_id) join customer_signups using (customer_id)'
+        df = pd.read_sql(query,url)
+        df.to_csv('telco_signup.csv',index=False)
+    return df
 
